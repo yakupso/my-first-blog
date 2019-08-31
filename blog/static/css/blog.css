@@ -7,6 +7,10 @@ h3 a {
     font-family: 'Oswald', sans-serif;
 }
 
+.main {
+    font-family: 'Oswald', sans-serif;
+}
+
 .page-header {
     background-color: #fd8787;
     margin-top: 0;
@@ -24,7 +28,7 @@ h3 a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .date {
@@ -48,6 +52,7 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .post h1 a, .post h1 a:visited {
