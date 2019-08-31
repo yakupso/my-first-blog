@@ -1,20 +1,13 @@
-<html>
-    <head>
-        <title>YakupsoБлог</title>
-    </head>
+{% extends 'blog/base.html' %}
 
-    <body>
-        <div>
-            <h1><a href="/">YakupsoБлог</a></h1>
-        </div>
-
-        {% for post in posts %}
-            <div>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
-                <p>опубликовано: {{ post.published_date }}</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <div class="date">
+                <p>Опубликовано: {{ post.published_date }}</p>
             </div>
-        {% endfor %}
-        
-    </body>
-</html>
+        </div>
+    {% endfor %}
+{% endblock %}
